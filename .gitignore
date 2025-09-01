@@ -1,4 +1,6 @@
 tt.*
+lazy-lock.json
+local/
 .tests
 doc/tags
 debug
