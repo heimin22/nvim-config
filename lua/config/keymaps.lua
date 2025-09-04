@@ -22,13 +22,13 @@ map("n", "<C-z>", "u", opts)
 map("n", "<C-y>", "<C-r>", opts)
 
 -- find
-map("n", "<C-f>", ":Telescope live_grep<CR>", opts)
+map("n", "<C-f>", ":grep -r", opts)
 
 -- file explorer
-map("n", "<C-b>", ":Neotree toggle<CR>", opts)
+map("n", "<C-b>", ":Ex<CR>", opts)
 
 -- open file
-map("n", "<C-p>", ":Telescope find_files<CR>", opts)
+map("n", "<C-p>", ":find", opts)
 
 -- tab / buffer navigation
 map("n", "<C-Tab>", ":bnext<CR>", opts)
@@ -44,7 +44,7 @@ map({ "n", "v" }, "<C-/>", function()
 end, opts)
 
 -- backspace yung word deletion
-map("i", "<C-BS>", "<C-h>", opts)
+map("i", "<C-H>", "<C-w>", opts)
 
 -- cursor movement
 map({ "n", "i" }, "<C-Left>", "<C-o>b", opts)
